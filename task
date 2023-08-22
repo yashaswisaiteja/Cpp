@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+class Rectangle{
+	private:
+		int length;
+	public:
+		int breadth;
+		Rectangle(int l,int b)
+		{
+			this->length=l;
+			this->breadth=b;
+		}
+		void modify()
+		{
+			length=3;
+			breadth=2;
+		}
+		int Rec()
+		{
+			return length*breadth;
+		}
+};
+int main()
+{
+	Rectangle r1(6,3);
+	r1.modify();
+	cout<<r1.Rec();
+	return 0;
+}
